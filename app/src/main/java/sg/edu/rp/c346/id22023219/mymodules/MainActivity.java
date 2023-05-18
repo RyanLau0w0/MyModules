@@ -29,13 +29,10 @@ public class MainActivity extends AppCompatActivity {
         tvC203.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle complete = new Bundle();
+                complete.putStringArray("key" , new String[]{"C203" , "Web Application Development in php" , "1" , "2023" , "4" , "W65D"});
                 Intent intent = new Intent(MainActivity.this, ModuleDetailActivity.class);
-                intent.putExtra("Module" , "C203");
-                intent.putExtra("Name" , "Web Application Development in php");
-                intent.putExtra("Sem" , "1");
-                intent.putExtra("Year" , "2023");
-                intent.putExtra("Credit" , "4");
-                intent.putExtra("Venue" , "W65D");
+                intent.putExtras(complete);
                 startActivity(intent);
             }
         });
@@ -43,13 +40,10 @@ public class MainActivity extends AppCompatActivity {
         tvC206.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle complete = new Bundle();
+                complete.putStringArray("key" , new String[]{"C206" , "Software Development Process" , "1" , "2023" , "4" , "W65D"});
                 Intent intent = new Intent(MainActivity.this, ModuleDetailActivity.class);
-                intent.putExtra("Module" , "C206");
-                intent.putExtra("Name" , "Software Development Process");
-                intent.putExtra("Sem" , "1");
-                intent.putExtra("Year" , "2023");
-                intent.putExtra("Credit" , "4");
-                intent.putExtra("Venue" , "W65D");
+                intent.putExtras(complete);
                 startActivity(intent);
             }
         });
@@ -57,13 +51,10 @@ public class MainActivity extends AppCompatActivity {
         tvC218.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle complete = new Bundle();
+                complete.putStringArray("key" , new String[]{"C218" , "UI/UX Design for Apps" , "1" , "2023" , "4" , "W65D"});
                 Intent intent = new Intent(MainActivity.this, ModuleDetailActivity.class);
-                intent.putExtra("Module" , "C218");
-                intent.putExtra("Name" , "UI/UX Design for Apps");
-                intent.putExtra("Sem" , "1");
-                intent.putExtra("Year" , "2023");
-                intent.putExtra("Credit" , "4");
-                intent.putExtra("Venue" , "W65D");
+                intent.putExtras(complete);
                 startActivity(intent);
             }
         });
@@ -71,13 +62,10 @@ public class MainActivity extends AppCompatActivity {
         tvC235.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle complete = new Bundle();
+                complete.putStringArray("key" , new String[]{"C235" , "IT Security and Management" , "1" , "2023" , "4" , "W65D"});
                 Intent intent = new Intent(MainActivity.this, ModuleDetailActivity.class);
-                intent.putExtra("Module" , "C235");
-                intent.putExtra("Name" , "IT Security and Management");
-                intent.putExtra("Sem" , "1");
-                intent.putExtra("Year" , "2023");
-                intent.putExtra("Credit" , "4");
-                intent.putExtra("Venue" , "W65D");
+                intent.putExtras(complete);
                 startActivity(intent);
             }
         });
@@ -85,13 +73,10 @@ public class MainActivity extends AppCompatActivity {
         tvC346.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle complete = new Bundle();
+                complete.putStringArray("key" , new String[]{"C346" , "Mobile App Development" , "1" , "2023" , "4" , "W65D"});
                 Intent intent = new Intent(MainActivity.this, ModuleDetailActivity.class);
-                intent.putExtra("Module" , "C346");
-                intent.putExtra("Name" , "Mobile App Development");
-                intent.putExtra("Sem" , "1");
-                intent.putExtra("Year" , "2023");
-                intent.putExtra("Credit" , "4");
-                intent.putExtra("Venue" , "E63A");
+                intent.putExtras(complete);
                 startActivity(intent);
             }
         });

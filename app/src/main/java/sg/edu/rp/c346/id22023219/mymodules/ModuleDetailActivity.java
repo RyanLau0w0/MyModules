@@ -16,14 +16,9 @@ public class ModuleDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_module_detail);
 
         tvDetails = findViewById(R.id.textViewDetails);
+        Bundle complete = this.getIntent().getExtras();
+        String[] array = complete.getStringArray("key");
 
-        Intent intentReceived = getIntent();
-        String Module = intentReceived.getStringExtra("Module");
-        String Name = intentReceived.getStringExtra("Name");
-        String Sem = intentReceived.getStringExtra("Sem");
-        String Year = intentReceived.getStringExtra("Year");
-        String Credit = intentReceived.getStringExtra("Credit");
-        String Venue = intentReceived.getStringExtra("Venue");
-        tvDetails.setText("Module Code: " + Module + "\nModule Name: " + Name + "\nAcademic Year: " + Year + "\nSemester: " + Sem + "\nModule Credit: " + Credit + "\nVenue: " + Venue);
+        tvDetails.setText("Module Code: " + array[0] + "\nModule Name: " + array[1] + "\nAcademic Year: " + array[2] + "\nSemester: " + array[3] + "\nModule Credit: " + array[4] + "\nVenue: " + array[5]);
     }
 }
